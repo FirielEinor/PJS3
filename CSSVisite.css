@@ -1,0 +1,39 @@
+body{
+	font-family: 'Cinzel', serif;
+}
+h1{
+color : gray;
+}
+
+center{
+	height : 30%;
+}
+ul{
+	height : 30%;
+
+}
+
+li{
+	display : inline;
+	margin-right : 2%;
+
+}
+
+li :hover{
+
+	color :#82B1FF;
+
+}
+
+li :active{
+
+	color :#82B1FF;
+
+}
+
+a{	
+	text-decoration : none;
+	color : gray;
+	
+}
+
