@@ -4,48 +4,46 @@ body{
 	background-repeat : no-repeat;
 	background-attachment : fixed;
 	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 }
-h1{
-color : gray;
+
+#titre-page h1{
+color : #ffffff;
 font-size : 50px;
 }
 
-
-ul{
-	height : 30%;
-
+img[src="logo.png"]{
+	width: 157px; 
+	height: 103px;
 }
 
-li{
+ul#menu_horizontal{
+	height : 30%;
+}
+
+ul#menu_horizontal li{
 	display : inline;
 	margin-right : 2%;
 	font-family: 'Raleway', sans-serif;
 
 }
 
-li :hover{
-
+ul#menu_horizontal li :hover{
 	color :#82B1FF;
-
 }
 
-li :active{
-
+ul#menu_horizontal li :active{
 	color :#82B1FF;
-
 }
 
-a{	
+ul#menu_horizontal li a{	
 	text-decoration : none;
 	color : gray;
-	
 }
 
-a[name=lienp]{
-	text-decoration : underline;
-}
-
-div[name=lien]{
+.box-presentation{
 	display : inline;
 	float : left;
 	width : 210px;
@@ -56,9 +54,9 @@ div[name=lien]{
 	opacity : 0.7;
 }
 
-h3{
-	display : inline;
-	
+a[name=lien]{
+	text-decoration : underline;
+		color : grey;
 }
 
 div[id=texte_intro]{
@@ -67,3 +65,15 @@ div[id=texte_intro]{
 	font-family: 'Raleway', sans-serif;
 }
 
+.text-footer{
+	color: #fff;
+	display: inline;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+footer{
+	margin-top: 30%;
+	background-color:#000;
+	height: 15 %;
+}
