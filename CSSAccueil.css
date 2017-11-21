@@ -84,4 +84,28 @@ footer{
 	background-color:#000;
 }
 
+#menu_horizontal{
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+@media all and (max-width: 800px) {
+  #menu_horizontal {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 500px) {
+  #menu_horizontal {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    flex-direction:column;
+	
+  }
+  #menu_horizontal li{
+	  padding-top: 10px;
+	  padding-bottom: 5px;
+  }
+}
 
