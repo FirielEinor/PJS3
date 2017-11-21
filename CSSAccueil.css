@@ -6,7 +6,6 @@ body{
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
-	-o-background-size: cover;
 }
 
 #titre-page h1{
@@ -21,6 +20,7 @@ img[src="logo.png"]{
 
 ul#menu_horizontal{
 	height : 30%;
+	background-color : black;
 }
 
 ul#menu_horizontal li{
@@ -40,16 +40,23 @@ ul#menu_horizontal li :active{
 
 ul#menu_horizontal li a{	
 	text-decoration : none;
-	color : gray;
+	color : white;
 }
 
+#page-accueil{
+	padding-top : 5%; 
+	justify-content : center;
+	display : flex;	
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
 .box-presentation{
 	display : inline;
-	float : left;
 	width : 210px;
 	height : 250px;
-	margin-top : 5%;
-	margin-left : 8%;
+	margin-top : 10px;
+	margin-left : 1px;
+	margin-right : 5px;
 	background-color : white;
 	opacity : 0.7;
 }
@@ -73,7 +80,8 @@ div[id=texte_intro]{
 }
 
 footer{
-	margin-top: 30%;
+	margin-top: 8%;
 	background-color:#000;
-	height: 15 %;
 }
+
+
