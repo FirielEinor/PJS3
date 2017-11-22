@@ -9,8 +9,12 @@ body{
 }
 
 #titre-page h1{
-color : #ffffff;
-font-size : 50px;
+	font-family: 'Cinzel', serif;
+	color : #ffffff;
+	font-size : 50px;
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: center;
 }
 
 img[src="logo.png"]{
@@ -34,8 +38,8 @@ ul#menu_horizontal li :hover{
 	color :#82B1FF;
 }
 
-ul#menu_horizontal li :active{
-	color :#82B1FF;
+ul#menu_horizontal li a:active{
+	color :#EC407A;
 }
 
 ul#menu_horizontal li a{	
@@ -63,13 +67,14 @@ ul#menu_horizontal li a{
 
 a[name=lien]{
 	text-decoration : underline;
-		color : grey;
+	color : grey;
 }
 
 div[id=texte_intro]{
 	padding-top : 5%;
-	width : 30%;
+	width : 80%;
 	font-family: 'Raleway', sans-serif;
+	color : white;
 }
 
 .text-footer{
@@ -77,11 +82,16 @@ div[id=texte_intro]{
 	display: inline;
 	margin-left: 2%;
 	margin-right: 2%;
+	
 }
 
 footer{
 	margin-top: 8%;
+	width : 100%;
 	background-color:#000;
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: center;
 }
 
 #menu_horizontal{
@@ -92,14 +102,12 @@ footer{
 
 @media all and (max-width: 800px) {
   #menu_horizontal {
-    /* When on medium sized screens, we center it by evenly distributing empty space around items */
     justify-content: space-around;
   }
 }
 
 @media all and (max-width: 500px) {
   #menu_horizontal {
-    /* When on medium sized screens, we center it by evenly distributing empty space around items */
     flex-direction:column;
 	
   }
