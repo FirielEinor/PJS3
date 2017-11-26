@@ -16,10 +16,6 @@ body{
 	justify-content: center;
 }
 
-
-center{
-	height : 30%;
-}
 ul{
 	height : 30%;
 }
@@ -46,9 +42,7 @@ img[src="logo.png"]{
 	width: 157px; 
 	height: 103px;
 }
-ul#menu_horizontal{
-	
-}
+
 
 ul#menu_horizontal li{
 	display : inline;
@@ -73,6 +67,7 @@ ul#menu_horizontal li a{
 	display:flex;
 	flex-flow: row wrap;
 	justify-content: center;
+	margin-bottom: 25%;
 }
 
 @media all and (max-width: 800px) {
@@ -90,4 +85,28 @@ ul#menu_horizontal li a{
 	  padding-top: 10px;
 	  padding-bottom: 5px;
   }
+
+
+ #menu_regions{
+	background-color: black;
+	height:100px;
+}
+
+input[type="button"]{
+	width:85px;
+	height:85px;
+	background:black;
+	box-shadow:2px 2px 8px #aaa;
+	font:bold 13px Cinzel;
+	border-radius:50%;
+	color:#ffffff;
+}
+
+.box-régions{
+	background-color: white;
+	height: 300px;
+}
+
+
+
 }
