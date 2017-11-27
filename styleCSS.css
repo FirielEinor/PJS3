@@ -91,22 +91,21 @@ ul#menu_horizontal li a{
 	background-color: black;
 	height:100px;
 }
-
-input[type="button"]{
-	width:85px;
-	height:85px;
+}
+a[name=btn]{
+	width:100px;
+	height:100px;
 	background:black;
-	box-shadow:2px 2px 8px #aaa;
 	font:bold 13px Cinzel;
 	border-radius:50%;
 	color:#ffffff;
 }
-
+div[name=selec]{
+	background-color : black;
+	height:200px;
+}
 .box-régions{
 	background-color: white;
 	height: 300px;
 }
 
-
-
-}
