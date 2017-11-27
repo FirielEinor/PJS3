@@ -100,6 +100,8 @@ footer{
 	justify-content: center;
 }
 
+
+
 @media all and (max-width: 800px) {
   #menu_horizontal {
     justify-content: space-around;
