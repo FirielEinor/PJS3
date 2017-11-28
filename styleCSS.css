@@ -68,10 +68,10 @@ ul#menu_horizontal li a{
 	display:flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	margin-bottom: 25%;
+	margin-bottom: 10%;
 }
-/** CSS BIBLIOTHEQUE **/
 
+/** CSS BIBLIOTHEQUE **/
 .popup {
   margin: 70px auto;
   padding: 20px;
