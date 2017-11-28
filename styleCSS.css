@@ -71,20 +71,6 @@ ul#menu_horizontal li a{
 	margin-bottom: 25%;
 }
 /** CSS BIBLIOTHEQUE **/
-.bibliotheque{
-	background-color : white;
-	display:flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	margin-bottom: 25%;
-}
-
-
-.bibliotheque h1{
-	text-align:center;
-	font-family: 'Cinzel', serif;
-}
-
 
 .popup {
   margin: 70px auto;
@@ -248,9 +234,12 @@ div[name=selec]{
 .column {
     float: left;
     width: 25%;
-    padding: 10px;
+	padding:10px;
 }
 
+.premiere{
+	padding-left:11%;
+}
 
 .column img {
     margin-top: 12px;
@@ -275,5 +264,6 @@ div[name=selec]{
 @media (max-width: 600px) {
     .column {
         width: 80%;
+		padding-left:11%;
    }
 }
