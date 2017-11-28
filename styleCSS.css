@@ -220,6 +220,15 @@ div[name=selec]{
 	justify-content: center;
 	
 }
+
+div[name=footer]{
+	 position: fixed;
+     bottom: 70px;
+	 right : 10px;
+	 color : black;
+	 font-weight : bold;
+  
+}
 .box-régions{
 	background-color: white;
 	height: 40%;
@@ -258,6 +267,10 @@ div[name=selec]{
     .column {
         width: 70%;
     }
+	div[name=footer]{
+	 visibility : hidden;
+  
+	}
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -266,4 +279,8 @@ div[name=selec]{
         width: 80%;
 		padding-left:11%;
    }
+   div[name=footer]{
+	 visibility : hidden;
+  
+	}
 }
