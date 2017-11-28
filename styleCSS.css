@@ -197,17 +197,42 @@ ul#menu_horizontal li a{
 	height:100px;
 }
 }
-a[name=btn]{
-	width:100px;
-	height:100px;
-	background:black;
-	font:bold 13px Cinzel;
+li[name=selec]{
+	margin-top : 15%;
+	width:150px;
+	height:150px;
+	background: black;
 	border-radius:50%;
+	border : solid 3px;
+	border-color : white;
 	color:#ffffff;
+	text-align: center;
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: center;
 }
+a[name=btn]{	
+	font-family: 'Cinzel', serif;
+	font-size : 20px;
+	font-weight : bold;
+	color : white;
+	margin-top : 35%;
+	
+}
+a[name=btn]:hover{	
+
+	color :#82B1FF;
+	
+}
+
 div[name=selec]{
+	padding-bottom : 1%;
+	padding-top : 1%;
 	background-color : black;
-	height:200px;
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	
 }
 .box-régions{
 	background-color: white;
