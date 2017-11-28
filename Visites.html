@@ -26,10 +26,15 @@
 	</header>
 
 	<div name="selec">
-		<li name="selec" ><a name="btn" href="#morbihan" >morbihan</a></li>
-		<li name="selec" ><a name="btn" href="#finistère" >finistère</a></li>
-		<li name="selec" ><a name="btn" href="#ille-et-vilaine" >ille-et-vilaine</a></li>
-		<li name="selec" ><a name="btn" href="#côtes-darmor" >côtes d'armor</a></li>
+		<div id="selec-menu">
+			<li name="selec-menu" ><a name="btn" href="#morbihan" >morbihan</a></li>
+			<li name="selec-menu" ><a name="btn" href="#finistère" >finistère</a></li>
+			<li name="selec-menu" ><a name="btn" href="#ille-et-vilaine" >ille-et-vilaine</a></li>
+			<li name="selec-menu" ><a name="btn" href="#côtes-darmor" >côtes d'armor</a></li>
+		</div>	
+		<div id="selec-carte">
+			<img name="selec-carte" src="carte-bretagne.png">
+		</div>
 	</div>
 
 	<section id="régions">
@@ -52,11 +57,21 @@
 				<h2>finistère</h2>
 				<div class="row">
 					<div class="column premiere">
-						<img class="img-region" src="st-mathieu.jpeg"  />
-						 <div class="text">
-						 	St Mathieu
-						 </div>
-					</div>
+							<img class="img-region" src="st-mathieu.jpeg"  />
+							<div class="text">
+							 	St Mathieu
+							 </div>
+							 <div id="popup1" class="overlay">
+								<div class="popup">
+									<img src="st-mathieu.jpeg" />
+									<h2>St Mathieu</h2>
+									<a class="close" href="#">&times;</a>
+									<div class="content">
+										Saint-Mathieu est un lieu où vous pourrez faire de très belles promenades avec vue sur la mer, vous passerez par la pointe Saint-Mathieu où vous y découvrirez des lieux magiques tels que le sémaphore de Saint-Mathieu, les ruines de l’Abbaye de Saint-Mathieu , le phare de Saint-Mathieu haut de trente-sept mètres et le cénotaphe de Saint-Mathieu : célèbre monument national honorant la mémoire des marins morts pour la France.
+									</div>
+								</div>
+							</div>
+						</div>
 					<div class="column ">
 						<img class="img-region" src="musee.jpg"  />
 					</div>

@@ -177,13 +177,13 @@ ul#menu_horizontal li a{
 	  padding-bottom: 5px;
   }
 
-
  #menu_regions{
 	background-color: black;
 	height:100px;
+  }
 }
-}
-li[name=selec]{
+
+li[name=selec-menu]{
 	margin-top : 15%;
 	width:150px;
 	height:150px;
@@ -197,6 +197,14 @@ li[name=selec]{
 	flex-flow: row wrap;
 	justify-content: center;
 }
+
+img[name=selec-carte]{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+
 a[name=btn]{	
 	font-family: 'Cinzel', serif;
 	font-size : 20px;
@@ -206,24 +214,35 @@ a[name=btn]{
 	
 }
 a[name=btn]:hover{	
-
 	color :#82B1FF;
-	
 }
 
-div[name=selec]{
+/*div[name=selec]{
 	padding-bottom : 1%;
 	padding-top : 1%;
 	background-color : black;
 	display:flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	
+}*/
+
+#selec-menu,#selec-carte{
+  padding-bottom : 1%;
+  padding-top : 1%;
+  background-color : black;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  visibility: hidden;
+}
+
+#selec-carte{
+  visibility: visible;
 }
 
 div[name=footer]{
 	 position: fixed;
-     bottom: 70px;
+    bottom: 70px;
 	 right : 10px;
 	 color : black;
 	 font-weight : bold;
@@ -262,25 +281,39 @@ div[name=footer]{
     clear: both;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
 @media (max-width: 800px) {
-    .column {
-        width: 70%;
-    }
+  .column {
+    width: 70%;
+    padding-left:11%;
+  }
 	div[name=footer]{
 	 visibility : hidden;
-  
 	}
+
+  #selec-carte{
+    visibility : hidden;
+  }
+
+  #selec-menu{
+    visibility : visible;
+  }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
-    .column {
-        width: 80%;
+  .column {
+    width: 80%;
 		padding-left:11%;
    }
+
    div[name=footer]{
 	 visibility : hidden;
-  
 	}
+
+  #selec-carte{
+    visibility : hidden;
+  }
+
+  #selec-menu{
+    visibility : visible;
+  }
 }
