@@ -39,6 +39,11 @@ a{
 	color : gray;	
 }
 
+a[name=list]{  
+  color : #fff;
+  font-size: xx-large;
+}
+
 img[src="logo.png"]{
 	width: 157px; 
 	height: 103px;
@@ -59,7 +64,7 @@ img[src="logo.png"]{
 .popup img{
 	width: 100%;
 	height:100%;
-	padding-top: 10%;
+	padding-top: 3%;
 }
 .popup h2 {
   margin-top: 0;
