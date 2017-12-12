@@ -17,36 +17,39 @@ body{
 	justify-content: center;
 }
 
-ul{
-	height : 30%;
-}
 
-li{
-	display : inline;
+li[name="selec-menu"]{
+	/*display : inline;*/
 	margin-right : 2%;
 }
 
-li :hover{
+li[name="selec-menu"] :hover{
 	color :#82B1FF;
 }
 
-li :active{
+li[name="selec-menu"] :active{
 	color :#82B1FF;
 }
 
-a{	
+a[name="btn"]{	
 	text-decoration : none;
 	color : gray;	
 }
 
+
 a[name=list]{  
   color : #fff;
   font-size: xx-large;
+  text-decoration: none;
 }
 
 img[src="logo.png"]{
 	width: 157px; 
 	height: 103px;
+}
+
+#selec-carte{
+  height : 30%;
 }
 
 /** CSS BIBLIOTHEQUE **/
@@ -68,7 +71,7 @@ img[src="logo.png"]{
 }
 .popup h2 {
   margin-top: 0;
-  font-family: Tahoma, Arial, sans-serif;
+  font-family: 'Cinzel', serif;
 }
 .popup .close {
   position: absolute;
@@ -86,6 +89,9 @@ img[src="logo.png"]{
 .popup .content {
   max-height: 30%;
   overflow: auto;
+  font-family: ahoma, Arial, sans-serif;
+  font-size: small;
+
 }
 
 @media screen and (max-width: 700px){
