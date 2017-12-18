@@ -46,10 +46,6 @@ img[src="logo.png"]{
 	height: 103px;
 }
 
-#selec-carte{
-  height : 30%;
-}
-
 /** CSS BIBLIOTHEQUE **/
 .popup {
   margin: 70px auto;
@@ -160,9 +156,12 @@ li[name=selec-menu]{
 }
 
 img[name=selec-carte]{
-  width: 50%;
+  
   margin: auto;
   text-align: center;
+}
+svg{
+	
 }
 
 
@@ -298,7 +297,8 @@ div[name=footer]{
 }
 
 .land:hover{
- fill: red;
+ fill: #FF4081;
+
 }
 
 .topnav .icon {
@@ -327,3 +327,4 @@ div[name=footer]{
   }
 
 }
+
