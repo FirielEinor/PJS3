@@ -27,9 +27,7 @@ li[name="selec-menu"] :hover{
 	color :#82B1FF;
 }
 
-li[name="selec-menu"] :active{
-	color :#82B1FF;
-}
+
 
 a[name="btn"]{	
 	text-decoration : none;
@@ -299,9 +297,8 @@ div[name=footer]{
   color: #64B5F6;
 }
 
-.active {
-  background-color: gray;
-  color: white;
+.land:hover{
+ fill: red;
 }
 
 .topnav .icon {
