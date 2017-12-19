@@ -32,7 +32,17 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+function AfficheInfoBulle(Case,texte) {
+document.getElementById(Case).value=texte;
+document.getElementById(Case).style.display='block';
+		
+}
+function MasqueInfoBulle(Case) {
+document.getElementById(Case).style.display='none';
+}
 </script>
+
+
 	</header>
 
 	<div name="selec">
@@ -42,12 +52,15 @@ function myFunction() {
 			<li name="selec-menu" ><a name="btn" href="#ille-et-vilaine" >ille-et-vilaine</a></li>
 			<li name="selec-menu" ><a name="btn" href="#côtes-darmor" >côtes d'armor</a></li>
 		</div>	
-		<div id="selec-carte">
+		<div id="selec-carte">		
+		<input id="ile" type="texte" value="" ></input>		
 		<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="612px" height="792px" viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
 <g>
 	<g id="XMLID_1_">
-		<a  xlink:title="Ile-Et-Vilaine" xlink:href="#ille-et-vilaine" ><path class="land" id="ileetvilaine" fill="#FFFFFF" d="M418.845,432.479c-0.935-4.297-7.139-5.431-13.133-3.816c-0.593-2.362,0.086-6.039-1.877-7.001
+		<a  xlink:title="Ile-Et-Vilaine" xlink:href="#ille-et-vilaine" onmouseover="AfficheInfoBulle('ile','Ile-Et-Vilaine')" onmouseout="MasqueInfoBulle('ile')"  >
+		
+		<path class="land" id="ileetvilaine" fill="#FFFFFF" onmouseover="alert(Ile-Et-Vilaine)" d="M418.845,432.479c-0.935-4.297-7.139-5.431-13.133-3.816c-0.593-2.362,0.086-6.039-1.877-7.001
 			c7.181-2.673,5.091-14.761,12.506-17.188c0.858-3.153,1.347-6.691,2.504-9.545c8.591,0.053,13.448-3.699,17.501-8.274
 			c2.832,0.086,3.266,2.608,6.247,2.545c3.499-1.444,6.957-0.898,9.375-2.545c5.006-3.409,2.546-11.063,7.51-14.633
 			c-0.17-7.108,2.154-16.515-0.626-22.276c4.54-6.275,11.402-26.809,1.241-32.464c10.065-2.48,25.901,0.909,32.51-5.088
@@ -62,7 +75,7 @@ function myFunction() {
 			c1.199-5.206,7.341-6.691,8.125-12.721c0.701-5.345-2.143-10.902-2.502-17.188c-3.479-0.352-5.962,0.3-6.248,3.186
 			c-1.941-3.27,2.684-5.313,3.744-7.643c-0.34-18.525-14.394-23.109-28.755-27.364C406.763,443.212,421.019,442.571,418.845,432.479
 			z"/></a>
-		<a xlink:title="Morbihan" xlink:href="#morbihan" ><path class="land" id="morbihan" fill="#FFFFFF" d="M170.661,407.659c9.62-7.022,23.186-10.785,38.13-7.643c-0.52,9.171,12.654,10.486,17.512,5.099
+		<a xlink:title="Morbihan" xlink:href="#morbihan" onmouseover="AfficheInfoBulle('ile','Morbihan')" onmouseout="MasqueInfoBulle('ile')" ><path class="land" id="morbihan" fill="#FFFFFF" d="M170.661,407.659c9.62-7.022,23.186-10.785,38.13-7.643c-0.52,9.171,12.654,10.486,17.512,5.099
 			c4.604,5.323,20.185,9.749,26.877,3.175c8.294,1.24,12.188-2.01,12.505-8.904c4.487-0.118,7.139-0.524,11.254,0.631
 			c-1.506,15.317,22.04,5.142,25.625,15.274c2.96-0.256,4.307,1.145,7.499,0.643c2.864,3.868,3.352,10.165,5.633,14.633
 			c8.305-0.139,7.382-8.123,16.249-6.36c-0.467,6.402-4.773,17.744,3.754,19.731c8.984,2.085,13.588-7.941,20.63-8.914
@@ -84,7 +97,7 @@ function myFunction() {
 			c6.852,0.193,9.631-7.151,7.499-14.003c5.081-3.955,3.468-16.056-0.626-19.731c-4.561-0.396-7.668,0.684-10.002,2.543
 			c-5.123-6.242-13.004-9.673-24.385-9.545c-3.999-5.046-1.686-16.526-8.75-18.45C177.735,414.905,173.185,408.365,170.661,407.659z
 			"/></a>
-		<a xlink:title="Côte d'Armor" xlink:href="#côtes-darmor" ><path  class="land" id="cotedarmor" fill="#FFFFFF" d="M193.167,277.816c8.04,2.32,13.025-4.927,10.002-13.992c2.97-2.469,3.415-0.631,8.125-0.642
+		<a xlink:title="Côte d'Armor" xlink:href="#côtes-darmor" onmouseover="AfficheInfoBulle('ile','Côte DArmor')" onmouseout="MasqueInfoBulle('ile')" ><path  class="land" id="cotedarmor" fill="#FFFFFF" d="M193.167,277.816c8.04,2.32,13.025-4.927,10.002-13.992c2.97-2.469,3.415-0.631,8.125-0.642
 			c6.386-6.852-7.127-11.854-6.873-16.547c1.813-0.694,4.433-0.577,6.247-1.272c1.305-1.646,0.382-5.547,2.503-6.371
 			c4.996,2.148,7.892,9.213,15.008,8.915c2.694-0.118,3.638-2.417,6.873-3.816c7.647-3.324,16.546-2.458,21.255-7.002
 			c-1.952,2.887-1.061,8.68-1.251,13.362c7.711,3.87,7.234-4.885,11.253-8.904c3.172-3.185,6.364-2.234,7.5-5.729
@@ -187,7 +200,7 @@ function myFunction() {
 			c5.112,4.457,0.381,17.188-5.007,18.46c-9.164,2.159-17.479-10.871-26.877-8.274c-0.488,2.672-4.518,4.436-7.499,2.544
 			c-1.877,3.399-4.508,6.019-6.258,9.545C10.374,303.118,15.677,301.75,16.887,304.55z"/>
 		
-	<a xlink:title="Finistère" xlink:href="#finistère" ><path class="land" title="finistere" fill="#FFFFFF" d="M10.003,335.1c0.063-8.669-8.041-14.783-2.493-21.635c4.157-1.913,10.129-1.989,9.376-8.915
+	<a xlink:title="Finistère" xlink:href="#finistère" onmouseover="AfficheInfoBulle('ile','Finistère')" onmouseout="MasqueInfoBulle('ile')"><path class="land" title="finistere" fill="#FFFFFF" d="M10.003,335.1c0.063-8.669-8.041-14.783-2.493-21.635c4.157-1.913,10.129-1.989,9.376-8.915
 			c-1.209-2.8-6.513-1.433-8.136-3.816c1.75-3.527,4.381-6.146,6.258-9.545c2.98,1.892,7.011,0.128,7.499-2.544
 			c9.397-2.597,17.713,10.433,26.877,8.274c5.388-1.272,10.119-14.003,5.007-18.46c10.649-0.823,14.976-8.092,24.999-9.546
 			c-1.156,1.369-0.413,4.66-0.625,7.002c2.09,4.521,8.157,0.78,10.628,0c8.114-2.565,16.303,0.769,16.26-8.915

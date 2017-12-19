@@ -8,7 +8,24 @@ body{
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 }
+#Texte{
+background-color : black;
+color : white;
+border : none;
+height : 40px;	
+position : absolute;
+}
 
+#ile{
+	position : absolute;
+	font-family: 'Cinzel', serif;
+	font-size : 30px;
+	color : white;
+	background-color : black;	
+	border : none;
+	width : 300px;
+	height : 50px;
+}
 #titre-page h1{
 	color : black;
 	font-size : 50px;
