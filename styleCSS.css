@@ -52,6 +52,7 @@ img[src="logo.png"]{
   padding: 20px;
   border-radius: 5px;
   width: 30%;
+
   position: relative;
   transition: all 5s ease-in-out;
   color: white;
@@ -66,19 +67,20 @@ img[src="logo.png"]{
 .popup h2 {
   margin-top: 0;
   font-family: 'Cinzel', serif;
+  
 }
 .popup .close {
   position: absolute;
-  top: 20px;
+  top: 5px;
   right: 30px;
   transition: all 200ms;
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
-  color: #333;
+  color: white;
 }
 .popup .close:hover {
-  color: #FFFFFF;
+  color: #DCDCDC;
 }
 .popup .content {
   max-height: 30%;
@@ -95,6 +97,26 @@ img[src="logo.png"]{
   .popup{
     width: 70%;
   }
+  
+}
+
+
+@media screen and (max-height: 750px){
+  .popup .content{
+	font-size: xx-small;
+  }
+}
+
+@media screen and (max-height: 670px){
+  .popup .content{
+	overflow: auto;
+    display: flex;
+	
+  }
+  .popup img{
+	display: none;
+}
+  
 }
 
 .box {
@@ -176,15 +198,6 @@ a[name=btn]{
 a[name=btn]:hover{	
 	color :#82B1FF;
 }
-
-/*div[name=selec]{
-	padding-bottom : 1%;
-	padding-top : 1%;
-	background-color : black;
-	display:flex;
-	flex-flow: row wrap;
-	justify-content: center;
-}*/
 
 #selec-menu,#selec-carte{
   padding-bottom : 1%;
