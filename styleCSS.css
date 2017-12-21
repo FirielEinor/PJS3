@@ -298,7 +298,41 @@ div[name=footer]{
 
 .land:hover{
  fill: #FF4081;
+}
 
+.land2{
+	fill: black;
+	fill-opacity: 1;
+	stroke:white;
+	stroke-opacity: 1;
+	stroke-width:0.5;
+	transition: fill 0.5s;
+}
+
+#carteGrande{
+	width:50%;
+}
+
+#FR-BRE:hover path{
+	fill:grey;
+}
+
+
+
+#FR-BRE span{
+	position;absolute;
+	text-color:#09c;
+    background:rgba(0,0,0,.9);
+    border-radius:3px;
+    box-shadow:0 0 2px rgba(0,0,0,.5);
+	transform:scale(0) rotate(-12deg);
+	transition:all .25s;
+	opacity:0;
+}
+
+#FR-BRE:hover span{
+	transform:scale(1) rotate(0);
+	opacity:1;
 }
 
 .topnav .icon {
