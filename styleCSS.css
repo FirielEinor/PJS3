@@ -8,7 +8,24 @@ body{
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 }
+#Texte{
+background-color : black;
+color : white;
+border : none;
+height : 40px;	
+position : absolute;
+}
 
+#ile{
+	position : absolute;
+	font-family: 'Cinzel', serif;
+	font-size : 30px;
+	color : white;
+	background-color : black;	
+	border : none;
+	width : 300px;
+	height : 50px;
+}
 #titre-page h1{
 	color : black;
 	font-size : 50px;
@@ -48,10 +65,11 @@ img[src="logo.png"]{
 
 /** CSS BIBLIOTHEQUE **/
 .popup {
-  margin: 70px auto;
+  margin: 80px auto;
   padding: 20px;
   border-radius: 5px;
   width: 30%;
+
   position: relative;
   transition: all 5s ease-in-out;
   color: white;
@@ -61,24 +79,25 @@ img[src="logo.png"]{
 .popup img{
 	width: 100%;
 	height:100%;
-	padding-top: 3%;
+	padding-top: 5%;
 }
 .popup h2 {
   margin-top: 0;
   font-family: 'Cinzel', serif;
+  
 }
 .popup .close {
   position: absolute;
-  top: 20px;
+  top:5px;
   right: 30px;
   transition: all 200ms;
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
-  color: #333;
+  color: white;
 }
 .popup .close:hover {
-  color: #FFFFFF;
+  color: #DCDCDC;
 }
 .popup .content {
   max-height: 30%;
@@ -95,6 +114,28 @@ img[src="logo.png"]{
   .popup{
     width: 70%;
   }
+  .popup img{
+	padding-top: 20%;
+}
+}
+
+
+@media screen and (max-height: 750px){
+  .popup .content{
+	font-size: xx-small;
+  }
+}
+
+@media screen and (max-height: 670px){
+  .popup .content{
+	overflow: auto;
+    display: flex;
+	
+  }
+  .popup img{
+	display: none;
+}
+  
 }
 
 .box {
@@ -176,15 +217,6 @@ a[name=btn]{
 a[name=btn]:hover{	
 	color :#82B1FF;
 }
-
-/*div[name=selec]{
-	padding-bottom : 1%;
-	padding-top : 1%;
-	background-color : black;
-	display:flex;
-	flex-flow: row wrap;
-	justify-content: center;
-}*/
 
 #selec-menu,#selec-carte{
   padding-bottom : 1%;
