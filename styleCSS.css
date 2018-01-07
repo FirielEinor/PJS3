@@ -8,6 +8,13 @@ body{
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 }
+#intro{
+	padding-top : 5%;
+	width : 50%;
+	font-family: 'Raleway', sans-serif;
+	color : white;
+	font-size : 20px;
+}
 #Texte{
 background-color : black;
 color : white;
@@ -184,9 +191,13 @@ img[src="logo.png"]{
 }
 
 
+div[name=selec]{
+	margin-top : 100px;
+	
+}
 
 li[name=selec-menu]{
-	margin-top : 15%;
+	
 	width:150px;
 	height:150px;
 	background: black;
@@ -205,10 +216,6 @@ img[name=selec-carte]{
   margin: auto;
   text-align: center;
 }
-svg{
-	
-}
-
 
 a[name=btn]{	
 	font-family: 'Cinzel', serif;
@@ -282,9 +289,7 @@ div[name=footer]{
     width: 70%;
     padding-left:11%;
   }
-	div[name=footer]{
-	 visibility : hidden;
-	}
+
 
   #selec-carte{
     visibility : hidden;
@@ -301,9 +306,7 @@ div[name=footer]{
 		padding-left:11%;
    }
 
-   div[name=footer]{
-	 visibility : hidden;
-	}
+
 
   #selec-carte{
     visibility : hidden;
