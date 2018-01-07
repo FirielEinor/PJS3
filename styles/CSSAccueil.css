@@ -22,6 +22,14 @@ img[src="logo.png"]{
 	height: 103px;
 }
 
+#carte{
+  width: 30%;
+}
+
+
+#carte path:hover{
+ 	fill: #fff;  ;
+}
 #page-accueil{
 	padding-top : 5%; 
 	justify-content : center;
