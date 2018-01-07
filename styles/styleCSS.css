@@ -1,7 +1,7 @@
 /** CSS GLOBAL **/
 body{
 	font-family: 'Cinzel', serif;
-	background-image : url("..img/Fond.jpg");
+	background-image : url("Fond.jpg");
 	background-repeat : no-repeat;
 	background-attachment : fixed;
 	background-size: cover;
@@ -78,6 +78,10 @@ a[name=list]{
   text-decoration: none;
 }
 
+img[src="logo.png"]{
+	width: 157px; 
+	height: 103px;
+}
 
 /** CSS BIBLIOTHEQUE **/
 .popup {

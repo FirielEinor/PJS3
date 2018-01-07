@@ -1,6 +1,6 @@
 body{
 	font-family: 'Cinzel', serif;
-	background-image : url("Accueil.jpg");
+	background-image : url("./Accueil.jpg");
 	background-repeat : no-repeat;
 	background-attachment : fixed;
 	background-size: cover;
