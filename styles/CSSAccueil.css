@@ -23,11 +23,12 @@ img[src="logo.png"]{
 }
 
 #carte{
+  margin-top:1%;
   width: 30%;
 }
 
 
-#carte path:hover{
+#carte a path:hover{
  	fill: #fff;  ;
 }
 #page-accueil{
