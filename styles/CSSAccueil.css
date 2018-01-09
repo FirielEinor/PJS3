@@ -112,6 +112,10 @@ footer{
     float: right;
     display: block;
   }
+  #carte{
+  margin-top:1%;
+  width: 90%;
+}
 }
 
 @media screen and (max-width: 600px) {
