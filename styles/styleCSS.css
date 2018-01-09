@@ -129,7 +129,7 @@ img[src="logo.png"]{
 }
 
 @media screen and (max-width: 750px){
-  div[name=footer]{
+  #footer{
 	display: none;
   }
 }
@@ -260,7 +260,7 @@ a[name=btn]:hover{
   visibility: visible;
 }
 
-div[name=footer]{
+#footer{
 	 position: fixed;
     bottom: 70px;
 	 right : 10px;
